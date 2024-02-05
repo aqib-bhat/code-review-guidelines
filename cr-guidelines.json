@@ -1,0 +1,389 @@
+[
+    {
+        "id": 1,
+        "groupName": "General guidelines",
+        "guidelines": [
+            {
+                "id": "1.1",
+                "text": "Link to the issue in the PR/CR description?",
+                "checked": false
+            },
+            {
+                "id": "1.2",
+                "text": "Issue number in Git commit? Good commit message?",
+                "checked": false
+            },
+            {
+                "id": "1.3",
+                "text": "If the implementation is not obvious or is being done in parts, then brief description of the current CR/PR?",
+                "checked": false
+            },
+            {
+                "id": "1.4",
+                "text": "Should this change be behind a feature flag?",
+                "checked": false
+            },
+            {
+                "id": "1.5",
+                "text": "Defensive coding",
+                "checked": false
+            },
+            {
+                "id": "1.6",
+                "text": "Exception and error handling? Custom exception?",
+                "checked": false
+            },
+            {
+                "id": "1.7",
+                "text": "Logging? Appropriate amount, info, and level? No sensitive or personally identifiable info (PII) to be logged",
+                "checked": false
+            },
+            {
+                "id": "1.8",
+                "text": "Retry logic? Exponential backoff? How much to retry? Need to cut ticket?",
+                "checked": false
+            },
+            {
+                "id": "1.9",
+                "text": "Throttling? Server side or Client side?",
+                "checked": false
+            },
+            {
+                "id": "1.10",
+                "text": "Are we fetching a lot more than we need like child objects? Is the query optimized to reduce the number of round trips?",
+                "checked": false
+            },
+            {
+                "id": "1.11",
+                "text": "Don't be mean, Be encouraging.",
+                "checked": false
+            },
+            {
+                "id": "1.12",
+                "text": "If you are nitpicking, making it explicit and don't block approval if there are only nitpick comments remaining unresolved.",
+                "checked": false
+            },
+            {
+                "id": "1.13",
+                "text": "Please respond to review comments so that looking back anyone can quickly know what the conclusion was.",
+                "checked": false
+            },
+            {
+                "id": "1.14",
+                "text": "Version update needed?",
+                "checked": false
+            },
+            {
+                "id": "1.15",
+                "text": "Method docs added or updated?",
+                "checked": false
+            },
+            {
+                "id": "1.16",
+                "text": "Data structures: Are the right data structures being employed?",
+                "checked": false
+            },
+            {
+                "id": "1.17",
+                "text": "README updates or a new README in a directory?",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "groupName": "Clean Code",
+        "guidelines": [
+            {
+                "id": "2.1",
+                "text": "Good naming of variables, functions, classes, etc.",
+                "checked": false
+            },
+            {
+                "id": "2.2",
+                "text": "Class or Method too long? Refactor and break it down into smaller parts.",
+                "checked": false
+            },
+            {
+                "id": "2.3",
+                "text": "Avoid using magic values.",
+                "checked": false
+            },
+            {
+                "id": "2.4",
+                "text": "String or number used at multiple places? Define and use a constant.",
+                "checked": false
+            },
+            {
+                "id": "2.5",
+                "text": "Helper class?",
+                "checked": false
+            },
+            {
+                "id": "2.6",
+                "text": "Dependency Injection?",
+                "checked": false
+            },
+            {
+                "id": "2.7",
+                "text": "Big constructor? Named arguments? Builder?",
+                "checked": false
+            },
+            {
+                "id": "2.8",
+                "text": "Comments in the code are for non-trivial purposes",
+                "checked": false
+            },
+            {
+                "id": "2.9",
+                "text": "DRY: Don't Repeat Yourself",
+                "checked": false
+            },
+            {
+                "id": "2.10",
+                "text": "KISS: Keep It Simple Stupid",
+                "checked": false
+            },
+            {
+                "id": "2.11",
+                "text": "YAGNI: You aren't gonna need it",
+                "checked": false
+            },
+            {
+                "id": "2.12",
+                "text": "Don't Reinvent the Wheel: Is there a library that already does some of the work? Is there a solid reason to not use that?",
+                "checked": false
+            },
+            {
+                "id": "2.13",
+                "text": "Functional programming: Can we rewrite any part in functional programming style?",
+                "checked": false
+            },
+            {
+                "id": "2.14",
+                "text": "No to large diffs when you can break it down into smaller PRs",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "groupName": "SOLID",
+        "guidelines": [
+            {
+                "id": "3.1",
+                "text": "Single-Responsibility Principle (SRP)",
+                "checked": false
+            },
+            {
+                "id": "3.2",
+                "text": "Open-Closed principle",
+                "checked": false
+            },
+            {
+                "id": "3.3",
+                "text": "Liskov Substitution Principle",
+                "checked": false
+            },
+            {
+                "id": "3.4",
+                "text": "Interface segregation principle",
+                "checked": false
+            },
+            {
+                "id": "3.5",
+                "text": "Dependency Inversion principle",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "groupName": "Concurrency",
+        "guidelines": [
+            {
+                "id": "4.1",
+                "text": "Can some of the independent calls or operations be made parallel?",
+                "checked": false
+            },
+            {
+                "id": "4.2",
+                "text": "If parallelization is not possible, is multithreading feasible?",
+                "checked": false
+            },
+            {
+                "id": "4.3",
+                "text": "Will the overhead of creating and maintaining threads be compensated by overall faster execution?",
+                "checked": false
+            },
+            {
+                "id": "4.4",
+                "text": "Are the shared variables synchronized?",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "groupName": "Caching",
+        "guidelines": [
+            {
+                "id": "5.1",
+                "text": "Is this case suitable for caching? How long should a value to cached?",
+                "checked": false
+            },
+            {
+                "id": "5.2",
+                "text": "Where to cache? In-memory, distributed cache, cached on API Gateway, CDN (invalidation needed)?",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "groupName": "Design Patterns",
+        "guidelines": [
+            {
+                "id": "6.1",
+                "text": "GOF design patterns: Creational, Structural, Behavioral",
+                "checked": false
+            },
+            {
+                "id": "6.2",
+                "text": "Enterprise Integration Patterns",
+                "checked": false
+            },
+            {
+                "id": "6.3",
+                "text": "Microservices: SAGA/2-phase commit: Choreography and Orchestration",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "groupName": "Security",
+        "guidelines": [
+            {
+                "id": "7.1",
+                "text": "Any known and managed security risk? CORS, SQL injection, inputs sanitized, etc.",
+                "checked": false
+            },
+            {
+                "id": "7.2",
+                "text": "Checked CWE and OWASP?",
+                "checked": false
+            },
+            {
+                "id": "7.3",
+                "text": "No secret or personally identifiable info (PII) in the code",
+                "checked": false
+            },
+            {
+                "id": "7.4",
+                "text": "For secrets, use a secrets management tool like HashiCorp's Vault",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "groupName": "Testing and verification",
+        "guidelines": [
+            {
+                "id": "8.1",
+                "text": "Why is the submitter confident that the code will work?",
+                "checked": false
+            },
+            {
+                "id": "8.2",
+                "text": "Did a clean build pass locally? If the PRs are also built automatically, did the PR build pass?",
+                "checked": false
+            },
+            {
+                "id": "8.3",
+                "text": "Static analysis / Code scan passed? e.g. Sonar, ESLint, etc.",
+                "checked": false
+            },
+            {
+                "id": "8.4",
+                "text": "Were the changes manually tested and verified?",
+                "checked": false
+            },
+            {
+                "id": "8.5",
+                "text": "Any useful screenshots to share? e.g. UI changes, Postman request and response, etc.",
+                "checked": false
+            },
+            {
+                "id": "8.6",
+                "text": "Can the reviewers preview the changes at some link?",
+                "checked": false
+            },
+            {
+                "id": "8.7",
+                "text": "Sensible and high enough Unit test coverage?",
+                "checked": false
+            }            
+        ]
+    },
+    {
+        "id": 9,
+        "groupName": "API Design",
+        "guidelines": [
+            {
+                "id": "9.1",
+                "text": "Appropriate HTTP verb used?",
+                "checked": false
+            },
+            {
+                "id": "9.2",
+                "text": "Nouns as collections e.g. 'books', 'books/123'",
+                "checked": false
+            },
+            {
+                "id": "9.3",
+                "text": "Appropriate response codes and messages?",
+                "checked": false
+            },
+            {
+                "id": "9.4",
+                "text": "Swagger documentation generated and validated?",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "groupName": "Infrastructure as Code",
+        "guidelines": [
+            {
+                "id": "10.1",
+                "text": "Verified in dev env?",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "groupName": "GitOps",
+        "guidelines": [
+            {
+                "id": "11.1",
+                "text": "Backward compatibility maintained? e.g. Avro schema",
+                "checked": false
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "groupName": "Schema changes",
+        "guidelines": [
+            {
+                "id": "12.1",
+                "text": "Reasons for choosing data type, size, etc.?",
+                "checked": false
+            }
+        ]
+    }
+]
