@@ -1,27 +1,17 @@
 {
+    "manifest_version": 3,
     "name": "Code Review Guidelines",
-    "version": "1.0.0",
     "description": "A browser extension for Chromium based browsers that has a checklist of guidelines for conducting code reviews.",
-    "permissions": ["storage"],
-    "host_permissions": [],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [],
-    "web_accessible_resources": [
-      {
-        "resources": [],
-        "matches": []
-      }
-    ],
-    "action": {
-      "default_icon": {
+    "version": "1.0.0",
+    "icons": {
         "16": "assets/ext-icon.png",
-        "24": "assets/ext-icon.png",
-        "32": "assets/ext-icon.png"
-      },
-      "default_title": "Code Review Guidelines",
-      "default_popup": "popup.html"
+        "32": "assets/ext-icon.png",
+        "48": "assets/ext-icon.png",
+        "128": "assets/ext-icon.png"
     },
-    "manifest_version": 3
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [],
+    "permissions": ["storage"]
 }
