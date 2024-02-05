@@ -1,7 +1,7 @@
 {
     "name": "Code Review Guidelines",
     "version": "1.0.0",
-    "description": "Guidelines for conducting code reviews",
+    "description": "A browser extension for Chromium based browsers that has a checklist of guidelines for conducting code reviews.",
     "permissions": ["storage"],
     "host_permissions": [],
     "background": {
@@ -10,11 +10,7 @@
     "content_scripts": [],
     "web_accessible_resources": [
       {
-        "resources": [
-          "assets/copy.png",
-          "assets/uncheck_all.png",
-          "assets/save.png"
-        ],
+        "resources": [],
         "matches": []
       }
     ],
