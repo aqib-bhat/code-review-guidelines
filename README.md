@@ -1,5 +1,7 @@
 # code-review-guidelines
 
+![Image](./assets/ext-icon.png)
+
 A browser extension for Chromium based browsers that has a checklist of guidelines for conducting code reviews.
 
 ## Features
