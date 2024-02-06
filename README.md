@@ -4,6 +4,10 @@
 
 A browser extension for Chromium based browsers that has a checklist of guidelines for conducting code reviews.
 
+Published on:
+
+- Chrome web store: <https://chromewebstore.google.com/detail/code-review-guidelines/ddlkabbmlogedjneafbkaaljclbaaiej>
+
 ## Features
 
 - Grouped checklist items of guidelines.
